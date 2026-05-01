@@ -13,3 +13,12 @@ The goal is to study how kernel structure, memory hierarchy, Tensor Core usage, 
 | Fused Softmax | Row-wise fused softmax, warp/shared-memory reductions, online softmax | cuDNN | 90% of cuDNN | RTX 3050 | Nsight Compute |
 | FlashAttention-lite | Single-head fused attention path, fused softmax, occupancy tuning | cuDNN SDPA | 85% of cuDNN SDPA | RTX 3050 | Nsight Compute |
 | Sparse Binary 2D FFT | Streaming tiles, memory-footprint reduction, Hermitian symmetry | Dense cuFFT workflow | Memory-efficient sparse FFT study | RTX 3050 / A4000 | Nsight Compute |
+
+## Kernel Studies
+
+- [FP32 GEMM](https://github.com/Pupking/01_tiled_gemm)
+- [WMMA Tensor Core GEMM](https://github.com/Pupking/02_mixed_precision_gemm)
+- [Parallel Reduction](https://github.com/Pupking/03_parallel_reduction)
+- [Fused Softmax](https://github.com/Pupking/04_fused_softmax)
+- [FlashAttention-lite](https://github.com/Pupking/05_flash_attention_lite)
+- [Sparse Binary 2D FFT](https://github.com/Pupking/fft_final)
